@@ -15,6 +15,10 @@ body{
     font-family: 'Trebuchet MS';
 }
 
+.orbit-bullets{
+    margin: 16px 0; 
+}
+
 main{
     width: 960px;
     height: auto;
@@ -35,14 +39,14 @@ header{
     position: relative;
     top: 0;
     left: 0;
-    z-index: 4;
+    z-index: 10;
 }
 
 nav{
     float: right;
     line-height: 35px;
     position: relative;
-    z-index: 10;
+    z-index: 20;
 }
 
 nav a{
@@ -83,8 +87,30 @@ img{
     float: left;
 }
 
-#popup{
+#tudo{
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1001;
+    /* background-color: rgba(0, 0, 0, .7); */
+    background-color: #000;
+    opacity: 0.7;
+}
 
+#popup{
+    display: none;
+    width: 400px;
+    height: 300px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-left: -200px;
+    margin-top: -150px;
+    background-color: #FFF;
+    z-index: 1100;
 }
 
 #banner{
@@ -102,7 +128,7 @@ img{
     position: absolute;
     top: 35px;
     left: 90px;
-    z-index: 20;
+    /* z-index: 30;  */
 }
 
 #caixa a{

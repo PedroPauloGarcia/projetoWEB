@@ -1,14 +1,12 @@
-*{
-    margin: 0;
-    padding: 0;
+:root{
+    --cor-do-texto-secundario: #666;
+    --cor-do-texto-principal: #402C71;
+    --cor-do-texto-barra: #422D71;
+    --cor-do-link-menu: #FFF;
 }
 
-
-:root{
-    --cor-do-texto-secundaria: #666;
-    --cor-do-texto-principal: #402C71;
-    --cor-texto-barra: #422D71;
-    --cor-do-link-menu: #FFF;
+*{
+    margin: 0;
 }
 
 body{
@@ -16,7 +14,7 @@ body{
 }
 
 .orbit-bullets{
-    margin: 16px 0; 
+    margin: 16px 0;
 }
 
 main{
@@ -29,7 +27,7 @@ header{
     width: 960px;
     height: 35px;
     float: left;
-    background-color: var(--cor-texto-barra);
+    background-color: var(--cor-do-texto-barra);
 }
 
 #logo{
@@ -61,12 +59,13 @@ nav a:hover{
 }
 
 h2{
-    color: var(--cor-do-texto-secundaria);
+    color: var(--cor-do-texto-principal);
+    font-size: 20px;
     margin-bottom: 0;
 }
 
 p{
-    color: var(--cor-do-texto-secundaria);
+    color:  var(--cor-do-texto-secundario);
     font-size: 14px;
     line-height: 120%;
     margin-top: 10px;
@@ -76,6 +75,10 @@ img{
     border: none;
 }
 
+#imgLeft{
+    float: left;
+}
+
 .titulo{
     color: var(--cor-do-texto-principal);
     font-size: 30px;
@@ -83,25 +86,20 @@ img{
     font-weight: bold;
 }
 
-#leftImg{
-    float: left;
-}
-
 #tudo{
-    display: none;
     width: 100%;
     height: 100%;
+    background-color: #000;
+    opacity: 0.7;
+    /* background-color: rgba(0, 0, 0, .7); */
     position: fixed;
     top: 0;
     left: 0;
     z-index: 1001;
-    /* background-color: rgba(0, 0, 0, .7); */
-    background-color: #000;
-    opacity: 0.7;
+    display: none;
 }
 
 #popup{
-    display: none;
     width: 400px;
     height: 300px;
     position: fixed;
@@ -110,7 +108,8 @@ img{
     margin-left: -200px;
     margin-top: -150px;
     background-color: #FFF;
-    z-index: 1100;
+    z-index: 1001;
+    display: none;
 }
 
 #banner{
@@ -124,16 +123,16 @@ img{
     display: none;
     width: 200px;
     height: 100px;
-    background-color: var(--cor-texto-barra);
+    background-color: var(--cor-do-texto-barra);
     position: absolute;
     top: 35px;
     left: 90px;
-    /* z-index: 30;  */
+    /* z-index: 30; */
 }
 
 #caixa a{
     display: block;
-    margin: 0; 
+    margin: 0;
 }
 
 #conteudo{
@@ -147,8 +146,6 @@ img{
     width: 280px;
     min-height: 100px;
     float: left;
-    /* margin-right: 40px; */
-    margin-top: 30px;
 }
 
 #box2{
@@ -160,10 +157,11 @@ footer{
     width: 960px;
     height: 35px;
     background-color: #E6DEF5;
-    color: var(--cor-do-texto-principal);
     float: left;
+    color: var(--cor-do-texto-principal);
     text-align: center;
     font-size: 12px;
     margin-top: 20px;
     line-height: 35px;
+    position: relative;
 }

@@ -1,9 +1,5 @@
-*{
-
-}
-
 body{
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Trebuchet MS';
 }
 
 h1{
@@ -60,17 +56,17 @@ header{
 #menu a{
     display: inline-block;
     font-size: 14px;
-    margin-left: 25px;
-    margin-right: 25px;
     color: #FFF;
     text-decoration: none;
+    margin-left: 25px;
+    margin-right: 25px;
 }
 
 #menu a:hover{
     text-decoration: underline;
 }
 
-#baner{
+#banner{
     width: 100%;
     height: auto;
     float: left;
@@ -101,4 +97,77 @@ footer{
     font-size: 14px;
     line-height: 30px;
     text-align: center;
+}
+
+.anuncioTablet{
+    width: 100%;
+    height: auto;
+    float: left;
+    background-color: #F60;
+    color: #FFF;
+    text-align: center;
+    padding: 5px 0;
+    display: none;
+}
+
+#menuMobile{
+    display: none;
+}
+
+/* Layout Responsivo --- Media Query */
+
+@media screen and (min-width:641px) and (max-width:768px){/* Tablet na vertical*/
+    .anuncioTablet{
+        display: block;
+    }
+}
+
+    @media screen and (max-width: 480px){ /* smart na horizontal*/
+        nav#menu a {
+            margin: 0 10px;
+        }
+
+        article#conteudo, aside#coluna{
+            width: 100%;
+        }
+
+        section#logo{
+            width: 180px;
+            height: auto;
+        }
+
+        section#logo img{
+            width: 100%;
+        }
+
+    }
+
+    @media screen and (max-width:400px){/* Smart na vertical*/
+
+        nav#menu{
+            height: auto;
+            line-height: 30px;
+            display: none;
+        }
+
+        nav#menu a{
+            display: block;
+            border-bottom: 1px solid #FFF;
+        }
+
+        nav#menu a:last-child{
+            border: none;
+        }
+
+        nav#menuMobile{
+            width: 100%;
+            display: block;
+        }
+
+        nav#menuMobile select{
+            width: 100%;
+            background-color: #333;
+            color: #FFF;
+        }
+
 }

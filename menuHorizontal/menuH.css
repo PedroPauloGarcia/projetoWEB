@@ -84,7 +84,7 @@ nav ul li a {
     padding: 10px;
     text-decoration: none;
     color: var(--cor-principal);
-    transition: 0.6s;
+    transition: 0.4s;
 }
 
 nav ul li a:hover {
@@ -113,4 +113,8 @@ nav ul ul {
 nav ul li:hover ul {
     display: block;
     position: absolute;
+}
+
+nav ul ul a{
+    width: 100%;
 }
